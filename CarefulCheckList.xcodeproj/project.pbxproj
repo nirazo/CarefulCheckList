@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		768AA158D0F4432697459C51 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E03944D455A94590A3070FDA /* libPods.a */; };
 		D21354F818DEB54D00816473 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21354F718DEB54D00816473 /* Foundation.framework */; };
 		D21354FA18DEB54D00816473 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21354F918DEB54D00816473 /* CoreGraphics.framework */; };
 		D21354FC18DEB54D00816473 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21354FB18DEB54D00816473 /* UIKit.framework */; };
@@ -22,6 +23,7 @@
 		D213551918DEB54F00816473 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21354FD18DEB54D00816473 /* CoreData.framework */; };
 		D213552118DEB54F00816473 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D213551F18DEB54F00816473 /* InfoPlist.strings */; };
 		D213552318DEB54F00816473 /* CarefulCheckListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D213552218DEB54F00816473 /* CarefulCheckListTests.m */; };
+		D213553118DEEC2600816473 /* KNCheckListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D213553018DEEC2600816473 /* KNCheckListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A659E5E85DE54C7FAB2348CD /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D21354F418DEB54D00816473 /* CarefulCheckList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarefulCheckList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21354F718DEB54D00816473 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D21354F918DEB54D00816473 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +56,9 @@
 		D213551E18DEB54F00816473 /* CarefulCheckListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CarefulCheckListTests-Info.plist"; sourceTree = "<group>"; };
 		D213552018DEB54F00816473 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D213552218DEB54F00816473 /* CarefulCheckListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarefulCheckListTests.m; sourceTree = "<group>"; };
+		D213552F18DEEC2600816473 /* KNCheckListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNCheckListViewController.h; sourceTree = "<group>"; };
+		D213553018DEEC2600816473 /* KNCheckListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNCheckListViewController.m; sourceTree = "<group>"; };
+		E03944D455A94590A3070FDA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 				D21354FE18DEB54D00816473 /* CoreData.framework in Frameworks */,
 				D21354FC18DEB54D00816473 /* UIKit.framework in Frameworks */,
 				D21354F818DEB54D00816473 /* Foundation.framework in Frameworks */,
+				768AA158D0F4432697459C51 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +95,7 @@
 				D213551C18DEB54F00816473 /* CarefulCheckListTests */,
 				D21354F618DEB54D00816473 /* Frameworks */,
 				D21354F518DEB54D00816473 /* Products */,
+				A659E5E85DE54C7FAB2348CD /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +116,7 @@
 				D21354FB18DEB54D00816473 /* UIKit.framework */,
 				D21354FD18DEB54D00816473 /* CoreData.framework */,
 				D213551518DEB54F00816473 /* XCTest.framework */,
+				E03944D455A94590A3070FDA /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +126,8 @@
 			children = (
 				D213550818DEB54D00816473 /* KNAppDelegate.h */,
 				D213550918DEB54E00816473 /* KNAppDelegate.m */,
+				D213552F18DEEC2600816473 /* KNCheckListViewController.h */,
+				D213553018DEEC2600816473 /* KNCheckListViewController.m */,
 				D213550E18DEB54E00816473 /* Images.xcassets */,
 				D213550B18DEB54E00816473 /* CarefulCheckList.xcdatamodeld */,
 				D213550018DEB54D00816473 /* Supporting Files */,
@@ -160,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D213552618DEB54F00816473 /* Build configuration list for PBXNativeTarget "CarefulCheckList" */;
 			buildPhases = (
+				845C1EE7E1C04D8C8E321782 /* Check Pods Manifest.lock */,
 				D21354F018DEB54D00816473 /* Sources */,
 				D21354F118DEB54D00816473 /* Frameworks */,
 				D21354F218DEB54D00816473 /* Resources */,
+				5B69DB3F23D24B4A947A6C97 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,11 +257,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B69DB3F23D24B4A947A6C97 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		845C1EE7E1C04D8C8E321782 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D21354F018DEB54D00816473 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D213553118DEEC2600816473 /* KNCheckListViewController.m in Sources */,
 				D213550618DEB54D00816473 /* main.m in Sources */,
 				D213550D18DEB54E00816473 /* CarefulCheckList.xcdatamodeld in Sources */,
 				D213550A18DEB54E00816473 /* KNAppDelegate.m in Sources */,
@@ -365,6 +412,7 @@
 		};
 		D213552718DEB54F00816473 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A659E5E85DE54C7FAB2348CD /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -378,6 +426,7 @@
 		};
 		D213552818DEB54F00816473 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A659E5E85DE54C7FAB2348CD /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -448,6 +497,7 @@
 				D213552818DEB54F00816473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D213552918DEB54F00816473 /* Build configuration list for PBXNativeTarget "CarefulCheckListTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +506,7 @@
 				D213552B18DEB54F00816473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

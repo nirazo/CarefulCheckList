@@ -1,1 +1,8 @@
-CarefulCheckList.xcodeproj/xcuserdata/*
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcworkspace/contents.xcworkspacedata
+.DS_Store
+
+#CocoaPod
+Pods/*
+Podfile.lock
