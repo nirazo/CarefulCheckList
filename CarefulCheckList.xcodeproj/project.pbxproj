@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D21354F818DEB54D00816473 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21354F718DEB54D00816473 /* Foundation.framework */; };
+		D21354FA18DEB54D00816473 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21354F918DEB54D00816473 /* CoreGraphics.framework */; };
+		D21354FC18DEB54D00816473 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21354FB18DEB54D00816473 /* UIKit.framework */; };
+		D21354FE18DEB54D00816473 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21354FD18DEB54D00816473 /* CoreData.framework */; };
+		D213550418DEB54D00816473 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D213550218DEB54D00816473 /* InfoPlist.strings */; };
+		D213550618DEB54D00816473 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D213550518DEB54D00816473 /* main.m */; };
+		D213550A18DEB54E00816473 /* KNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D213550918DEB54E00816473 /* KNAppDelegate.m */; };
+		D213550D18DEB54E00816473 /* CarefulCheckList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D213550B18DEB54E00816473 /* CarefulCheckList.xcdatamodeld */; };
+		D213550F18DEB54E00816473 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D213550E18DEB54E00816473 /* Images.xcassets */; };
+		D213551618DEB54F00816473 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D213551518DEB54F00816473 /* XCTest.framework */; };
+		D213551718DEB54F00816473 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21354F718DEB54D00816473 /* Foundation.framework */; };
+		D213551818DEB54F00816473 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21354FB18DEB54D00816473 /* UIKit.framework */; };
+		D213551918DEB54F00816473 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21354FD18DEB54D00816473 /* CoreData.framework */; };
+		D213552118DEB54F00816473 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D213551F18DEB54F00816473 /* InfoPlist.strings */; };
+		D213552318DEB54F00816473 /* CarefulCheckListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D213552218DEB54F00816473 /* CarefulCheckListTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D213551A18DEB54F00816473 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D21354EC18DEB54C00816473 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D21354F318DEB54D00816473;
+			remoteInfo = CarefulCheckList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D21354F418DEB54D00816473 /* CarefulCheckList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarefulCheckList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21354F718DEB54D00816473 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D21354F918DEB54D00816473 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D21354FB18DEB54D00816473 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D21354FD18DEB54D00816473 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D213550118DEB54D00816473 /* CarefulCheckList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CarefulCheckList-Info.plist"; sourceTree = "<group>"; };
+		D213550318DEB54D00816473 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D213550518DEB54D00816473 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D213550718DEB54D00816473 /* CarefulCheckList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarefulCheckList-Prefix.pch"; sourceTree = "<group>"; };
+		D213550818DEB54D00816473 /* KNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNAppDelegate.h; sourceTree = "<group>"; };
+		D213550918DEB54E00816473 /* KNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNAppDelegate.m; sourceTree = "<group>"; };
+		D213550C18DEB54E00816473 /* CarefulCheckList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CarefulCheckList.xcdatamodel; sourceTree = "<group>"; };
+		D213550E18DEB54E00816473 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D213551418DEB54F00816473 /* CarefulCheckListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarefulCheckListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D213551518DEB54F00816473 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D213551E18DEB54F00816473 /* CarefulCheckListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CarefulCheckListTests-Info.plist"; sourceTree = "<group>"; };
+		D213552018DEB54F00816473 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D213552218DEB54F00816473 /* CarefulCheckListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarefulCheckListTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D21354F118DEB54D00816473 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D21354FA18DEB54D00816473 /* CoreGraphics.framework in Frameworks */,
+				D21354FE18DEB54D00816473 /* CoreData.framework in Frameworks */,
+				D21354FC18DEB54D00816473 /* UIKit.framework in Frameworks */,
+				D21354F818DEB54D00816473 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D213551118DEB54F00816473 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D213551618DEB54F00816473 /* XCTest.framework in Frameworks */,
+				D213551918DEB54F00816473 /* CoreData.framework in Frameworks */,
+				D213551818DEB54F00816473 /* UIKit.framework in Frameworks */,
+				D213551718DEB54F00816473 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D21354EB18DEB54C00816473 = {
+			isa = PBXGroup;
+			children = (
+				D21354FF18DEB54D00816473 /* CarefulCheckList */,
+				D213551C18DEB54F00816473 /* CarefulCheckListTests */,
+				D21354F618DEB54D00816473 /* Frameworks */,
+				D21354F518DEB54D00816473 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D21354F518DEB54D00816473 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D21354F418DEB54D00816473 /* CarefulCheckList.app */,
+				D213551418DEB54F00816473 /* CarefulCheckListTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D21354F618DEB54D00816473 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D21354F718DEB54D00816473 /* Foundation.framework */,
+				D21354F918DEB54D00816473 /* CoreGraphics.framework */,
+				D21354FB18DEB54D00816473 /* UIKit.framework */,
+				D21354FD18DEB54D00816473 /* CoreData.framework */,
+				D213551518DEB54F00816473 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D21354FF18DEB54D00816473 /* CarefulCheckList */ = {
+			isa = PBXGroup;
+			children = (
+				D213550818DEB54D00816473 /* KNAppDelegate.h */,
+				D213550918DEB54E00816473 /* KNAppDelegate.m */,
+				D213550E18DEB54E00816473 /* Images.xcassets */,
+				D213550B18DEB54E00816473 /* CarefulCheckList.xcdatamodeld */,
+				D213550018DEB54D00816473 /* Supporting Files */,
+			);
+			path = CarefulCheckList;
+			sourceTree = "<group>";
+		};
+		D213550018DEB54D00816473 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D213550118DEB54D00816473 /* CarefulCheckList-Info.plist */,
+				D213550218DEB54D00816473 /* InfoPlist.strings */,
+				D213550518DEB54D00816473 /* main.m */,
+				D213550718DEB54D00816473 /* CarefulCheckList-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D213551C18DEB54F00816473 /* CarefulCheckListTests */ = {
+			isa = PBXGroup;
+			children = (
+				D213552218DEB54F00816473 /* CarefulCheckListTests.m */,
+				D213551D18DEB54F00816473 /* Supporting Files */,
+			);
+			path = CarefulCheckListTests;
+			sourceTree = "<group>";
+		};
+		D213551D18DEB54F00816473 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D213551E18DEB54F00816473 /* CarefulCheckListTests-Info.plist */,
+				D213551F18DEB54F00816473 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D21354F318DEB54D00816473 /* CarefulCheckList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D213552618DEB54F00816473 /* Build configuration list for PBXNativeTarget "CarefulCheckList" */;
+			buildPhases = (
+				D21354F018DEB54D00816473 /* Sources */,
+				D21354F118DEB54D00816473 /* Frameworks */,
+				D21354F218DEB54D00816473 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarefulCheckList;
+			productName = CarefulCheckList;
+			productReference = D21354F418DEB54D00816473 /* CarefulCheckList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D213551318DEB54F00816473 /* CarefulCheckListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D213552918DEB54F00816473 /* Build configuration list for PBXNativeTarget "CarefulCheckListTests" */;
+			buildPhases = (
+				D213551018DEB54F00816473 /* Sources */,
+				D213551118DEB54F00816473 /* Frameworks */,
+				D213551218DEB54F00816473 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D213551B18DEB54F00816473 /* PBXTargetDependency */,
+			);
+			name = CarefulCheckListTests;
+			productName = CarefulCheckListTests;
+			productReference = D213551418DEB54F00816473 /* CarefulCheckListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D21354EC18DEB54C00816473 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Kenzo;
+				TargetAttributes = {
+					D213551318DEB54F00816473 = {
+						TestTargetID = D21354F318DEB54D00816473;
+					};
+				};
+			};
+			buildConfigurationList = D21354EF18DEB54D00816473 /* Build configuration list for PBXProject "CarefulCheckList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D21354EB18DEB54C00816473;
+			productRefGroup = D21354F518DEB54D00816473 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D21354F318DEB54D00816473 /* CarefulCheckList */,
+				D213551318DEB54F00816473 /* CarefulCheckListTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D21354F218DEB54D00816473 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D213550418DEB54D00816473 /* InfoPlist.strings in Resources */,
+				D213550F18DEB54E00816473 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D213551218DEB54F00816473 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D213552118DEB54F00816473 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D21354F018DEB54D00816473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D213550618DEB54D00816473 /* main.m in Sources */,
+				D213550D18DEB54E00816473 /* CarefulCheckList.xcdatamodeld in Sources */,
+				D213550A18DEB54E00816473 /* KNAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D213551018DEB54F00816473 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D213552318DEB54F00816473 /* CarefulCheckListTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D213551B18DEB54F00816473 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D21354F318DEB54D00816473 /* CarefulCheckList */;
+			targetProxy = D213551A18DEB54F00816473 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D213550218DEB54D00816473 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D213550318DEB54D00816473 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D213551F18DEB54F00816473 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D213552018DEB54F00816473 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D213552418DEB54F00816473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D213552518DEB54F00816473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D213552718DEB54F00816473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarefulCheckList/CarefulCheckList-Prefix.pch";
+				INFOPLIST_FILE = "CarefulCheckList/CarefulCheckList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D213552818DEB54F00816473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarefulCheckList/CarefulCheckList-Prefix.pch";
+				INFOPLIST_FILE = "CarefulCheckList/CarefulCheckList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D213552A18DEB54F00816473 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CarefulCheckList.app/CarefulCheckList";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarefulCheckList/CarefulCheckList-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CarefulCheckListTests/CarefulCheckListTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D213552B18DEB54F00816473 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CarefulCheckList.app/CarefulCheckList";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CarefulCheckList/CarefulCheckList-Prefix.pch";
+				INFOPLIST_FILE = "CarefulCheckListTests/CarefulCheckListTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D21354EF18DEB54D00816473 /* Build configuration list for PBXProject "CarefulCheckList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D213552418DEB54F00816473 /* Debug */,
+				D213552518DEB54F00816473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D213552618DEB54F00816473 /* Build configuration list for PBXNativeTarget "CarefulCheckList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D213552718DEB54F00816473 /* Debug */,
+				D213552818DEB54F00816473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D213552918DEB54F00816473 /* Build configuration list for PBXNativeTarget "CarefulCheckListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D213552A18DEB54F00816473 /* Debug */,
+				D213552B18DEB54F00816473 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D213550B18DEB54E00816473 /* CarefulCheckList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D213550C18DEB54E00816473 /* CarefulCheckList.xcdatamodel */,
+			);
+			currentVersion = D213550C18DEB54E00816473 /* CarefulCheckList.xcdatamodel */;
+			path = CarefulCheckList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D21354EC18DEB54C00816473 /* Project object */;
+}
