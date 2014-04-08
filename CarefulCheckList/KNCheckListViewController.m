@@ -32,6 +32,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewTodo:)];
+    self.navigationItem.rightBarButtonItem = addButton;
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,6 +57,10 @@
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 0;
+}
+
+- (void)addNewTodo:(id)sender {
+    
 }
 
 /*
