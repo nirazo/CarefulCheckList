@@ -24,6 +24,14 @@
 		D213552118DEB54F00816473 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D213551F18DEB54F00816473 /* InfoPlist.strings */; };
 		D213552318DEB54F00816473 /* CarefulCheckListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D213552218DEB54F00816473 /* CarefulCheckListTests.m */; };
 		D213553118DEEC2600816473 /* KNCheckListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D213553018DEEC2600816473 /* KNCheckListViewController.m */; };
+		D2292C7D18F44C0D00A86E96 /* KNTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2292C7C18F44C0D00A86E96 /* KNTaskController.m */; };
+		D2292C8018F44C2B00A86E96 /* KNSituationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2292C7F18F44C2B00A86E96 /* KNSituationController.m */; };
+		D2292C8518F451DD00A86E96 /* _KNSituation.m in Sources */ = {isa = PBXBuildFile; fileRef = D2292C8218F451DD00A86E96 /* _KNSituation.m */; };
+		D2292C8618F451DD00A86E96 /* _KNTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D2292C8418F451DD00A86E96 /* _KNTask.m */; };
+		D2292C8B18F451EC00A86E96 /* KNSituation.m in Sources */ = {isa = PBXBuildFile; fileRef = D2292C8818F451EC00A86E96 /* KNSituation.m */; };
+		D2292C8C18F451EC00A86E96 /* KNTask.m in Sources */ = {isa = PBXBuildFile; fileRef = D2292C8A18F451EC00A86E96 /* KNTask.m */; };
+		D2292C8F18F6DFFC00A86E96 /* KNTaskInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2292C8E18F6DFFC00A86E96 /* KNTaskInputViewController.m */; };
+		D2292C9218F6E57100A86E96 /* KNLabelAndFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2292C9118F6E57100A86E96 /* KNLabelAndFieldTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +66,22 @@
 		D213552218DEB54F00816473 /* CarefulCheckListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarefulCheckListTests.m; sourceTree = "<group>"; };
 		D213552F18DEEC2600816473 /* KNCheckListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNCheckListViewController.h; sourceTree = "<group>"; };
 		D213553018DEEC2600816473 /* KNCheckListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNCheckListViewController.m; sourceTree = "<group>"; };
+		D2292C7B18F44C0D00A86E96 /* KNTaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTaskController.h; sourceTree = "<group>"; };
+		D2292C7C18F44C0D00A86E96 /* KNTaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTaskController.m; sourceTree = "<group>"; };
+		D2292C7E18F44C2B00A86E96 /* KNSituationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSituationController.h; sourceTree = "<group>"; };
+		D2292C7F18F44C2B00A86E96 /* KNSituationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSituationController.m; sourceTree = "<group>"; };
+		D2292C8118F451DD00A86E96 /* _KNSituation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KNSituation.h; sourceTree = "<group>"; };
+		D2292C8218F451DD00A86E96 /* _KNSituation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KNSituation.m; sourceTree = "<group>"; };
+		D2292C8318F451DD00A86E96 /* _KNTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _KNTask.h; sourceTree = "<group>"; };
+		D2292C8418F451DD00A86E96 /* _KNTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _KNTask.m; sourceTree = "<group>"; };
+		D2292C8718F451EC00A86E96 /* KNSituation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNSituation.h; sourceTree = "<group>"; };
+		D2292C8818F451EC00A86E96 /* KNSituation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNSituation.m; sourceTree = "<group>"; };
+		D2292C8918F451EC00A86E96 /* KNTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTask.h; sourceTree = "<group>"; };
+		D2292C8A18F451EC00A86E96 /* KNTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTask.m; sourceTree = "<group>"; };
+		D2292C8D18F6DFFC00A86E96 /* KNTaskInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTaskInputViewController.h; sourceTree = "<group>"; };
+		D2292C8E18F6DFFC00A86E96 /* KNTaskInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTaskInputViewController.m; sourceTree = "<group>"; };
+		D2292C9018F6E57100A86E96 /* KNLabelAndFieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNLabelAndFieldTableViewCell.h; sourceTree = "<group>"; };
+		D2292C9118F6E57100A86E96 /* KNLabelAndFieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNLabelAndFieldTableViewCell.m; sourceTree = "<group>"; };
 		E03944D455A94590A3070FDA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -124,6 +148,8 @@
 		D21354FF18DEB54D00816473 /* CarefulCheckList */ = {
 			isa = PBXGroup;
 			children = (
+				D2292C7A18F44BC100A86E96 /* ModelControllers */,
+				D2292C7318F444B100A86E96 /* Models */,
 				D213550818DEB54D00816473 /* KNAppDelegate.h */,
 				D213550918DEB54E00816473 /* KNAppDelegate.m */,
 				D213552F18DEEC2600816473 /* KNCheckListViewController.h */,
@@ -131,6 +157,10 @@
 				D213550E18DEB54E00816473 /* Images.xcassets */,
 				D213550B18DEB54E00816473 /* CarefulCheckList.xcdatamodeld */,
 				D213550018DEB54D00816473 /* Supporting Files */,
+				D2292C8D18F6DFFC00A86E96 /* KNTaskInputViewController.h */,
+				D2292C8E18F6DFFC00A86E96 /* KNTaskInputViewController.m */,
+				D2292C9018F6E57100A86E96 /* KNLabelAndFieldTableViewCell.h */,
+				D2292C9118F6E57100A86E96 /* KNLabelAndFieldTableViewCell.m */,
 			);
 			path = CarefulCheckList;
 			sourceTree = "<group>";
@@ -162,6 +192,32 @@
 				D213551F18DEB54F00816473 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2292C7318F444B100A86E96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2292C8718F451EC00A86E96 /* KNSituation.h */,
+				D2292C8818F451EC00A86E96 /* KNSituation.m */,
+				D2292C8918F451EC00A86E96 /* KNTask.h */,
+				D2292C8A18F451EC00A86E96 /* KNTask.m */,
+				D2292C8118F451DD00A86E96 /* _KNSituation.h */,
+				D2292C8218F451DD00A86E96 /* _KNSituation.m */,
+				D2292C8318F451DD00A86E96 /* _KNTask.h */,
+				D2292C8418F451DD00A86E96 /* _KNTask.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D2292C7A18F44BC100A86E96 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2292C7B18F44C0D00A86E96 /* KNTaskController.h */,
+				D2292C7C18F44C0D00A86E96 /* KNTaskController.m */,
+				D2292C7E18F44C2B00A86E96 /* KNSituationController.h */,
+				D2292C7F18F44C2B00A86E96 /* KNSituationController.m */,
+			);
+			name = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,10 +351,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2292C8518F451DD00A86E96 /* _KNSituation.m in Sources */,
+				D2292C8F18F6DFFC00A86E96 /* KNTaskInputViewController.m in Sources */,
 				D213553118DEEC2600816473 /* KNCheckListViewController.m in Sources */,
 				D213550618DEB54D00816473 /* main.m in Sources */,
+				D2292C9218F6E57100A86E96 /* KNLabelAndFieldTableViewCell.m in Sources */,
+				D2292C8B18F451EC00A86E96 /* KNSituation.m in Sources */,
 				D213550D18DEB54E00816473 /* CarefulCheckList.xcdatamodeld in Sources */,
 				D213550A18DEB54E00816473 /* KNAppDelegate.m in Sources */,
+				D2292C7D18F44C0D00A86E96 /* KNTaskController.m in Sources */,
+				D2292C8C18F451EC00A86E96 /* KNTask.m in Sources */,
+				D2292C8018F44C2B00A86E96 /* KNSituationController.m in Sources */,
+				D2292C8618F451DD00A86E96 /* _KNTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

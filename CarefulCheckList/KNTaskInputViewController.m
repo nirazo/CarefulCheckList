@@ -1,27 +1,25 @@
 //
-//  KNCheckListViewController.m
+//  KNTaskInputViewControllerTableViewController.m
 //  CarefulCheckList
 //
-//  Created by Kenzo on 2014/03/23.
+//  Created by Kenzo on 2014/04/10.
 //  Copyright (c) 2014年 Kenzo. All rights reserved.
 //
 
-#import "KNCheckListViewController.h"
-#import "KNTaskController.h"
-#import "KNSituation.h"
 #import "KNTaskInputViewController.h"
+#import "KNLabelAndFieldTableViewCell.h"
 
-@interface KNCheckListViewController ()
+@interface KNTaskInputViewController ()
 
 @end
 
-@implementation KNCheckListViewController
+@implementation KNTaskInputViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
+        self.navigationItem.title = @"新規Todo追加";
     }
     return self;
 }
@@ -29,16 +27,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.tableView registerClass:[KNLabelAndFieldTableViewCell class] forCellReuseIdentifier:@"Cell"];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"priorityCell"];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"situationCell"];
     
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelTapped:)];
+    self.navigationItem.leftBarButtonItem = cancelButton;
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewTodo:)];
-    self.navigationItem.rightBarButtonItem = addButton;
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -55,30 +57,42 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return 3;
 }
 
-- (void)addNewTodo:(id)sender {
-    KNTaskInputViewController *taskInputVC = [[KNTaskInputViewController alloc] initWithStyle:UITableViewStylePlain];
-    UINavigationController *navCon = [[UINavigationController alloc] initWithRootViewController:taskInputVC];
-    //navCon.toolbar.translucent = NO;
-    //navCon.navigationBar.translucent = NO;
-    [self presentViewController:navCon animated:YES completion:nil];
-    taskInputVC.onCancelTapped = ^(void){
-        [navCon dismissViewControllerAnimated:YES completion:nil];
-    };
-}
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+    if (indexPath.row == 0) {
+        KNLabelAndFieldTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+        cell.textLabel.text = @"タスク: ";
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.textField.placeholder = @"タスク名を入力して下さい";
+        return cell;
+    } else if (indexPath.row == 1) {
+        UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"priorityCell"];
+        cell.textLabel.text = @"優先度: ";
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.detailTextLabel.textColor = [UIColor blackColor];
+        cell.detailTextLabel.text = @"高";
+        return cell;
+    } else {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"situationCell" forIndexPath:indexPath];
+        cell.textLabel.text = @"場所: ";
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
+    }
 }
-*/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        // do nothing
+    } else if (indexPath.row == 1) {
+        
+    }
+}
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -128,5 +142,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)cancelTapped:(id)sender {
+    if (self.onCancelTapped) {
+        self.onCancelTapped();
+    }
+}
 
 @end

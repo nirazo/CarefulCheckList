@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Situation" syncable="YES">
+    <entity name="Situation" representedClassName="KNSituation" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="task" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Task" inverseName="situation" inverseEntity="Task" syncable="YES"/>
+        <relationship name="task" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Task" inverseName="situation" inverseEntity="Task" syncable="YES"/>
     </entity>
-    <entity name="Task" syncable="YES">
+    <entity name="Task" representedClassName="KNTask" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="priority" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="taskName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="situation" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Situation" inverseName="task" inverseEntity="Situation" syncable="YES"/>
+        <relationship name="situation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Situation" inverseName="task" inverseEntity="Situation" syncable="YES"/>
     </entity>
     <elements>
         <element name="Task" positionX="-290" positionY="-21" width="119" height="88"/>
